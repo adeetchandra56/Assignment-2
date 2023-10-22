@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment 2</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="Box1">
+            <h1>Enter a word to find out how to spell it in reverse</h1>
+            <label for="enteredString">Enter word here!!</label>
+            <input type="text" id="enteredString">
+            <button onclick="reversingString()">Reverse the word</button>
+            <p id="reversedString"></p>
+        </div>
+
+        <div class="Box2">
+            <h1>Enter 3 numbers to check if its a palindrome</h1>
+            <label for="enteredNumber">Enter number here!!</label>
+            <input type="text" id="enteredNumber">
+            <button onclick="checkingPalindrome()">Check if palindrome</button>
+            <p id="palindromeAnswer"></p>
+        </div>
+
+
+        <div class="Box3">
+            <h1>Enter the subtotal of the bill and how much you want to tip!!</h1>
+            <label for="subtotal">Enter subtotal here</label>
+            <input type="text" id="subtotal">
+            <label for="tip">Enter a number out of 100 to determine tip percentage. Example: enter "20" for 20%!!!</label>
+            <input type="text" id="tip">
+            <button onclick="finalTotal()">Calculate Final Bill!!</button>
+            <p id="finalTotal"></p>
+        </div>
+    
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
