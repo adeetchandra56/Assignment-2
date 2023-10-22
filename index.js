@@ -1,3 +1,22 @@
+let btn1 = document.querySelector('.btn1');
+let btn2 = document.querySelector('.btn2');
+let btn3 = document.querySelector('.btn3');
+
+btn1.addEventListener('click', (e) => {
+    e.preventDefault();
+    reversingString();
+});
+
+btn2.addEventListener('click', (e) => {
+    e.preventDefault();
+    checkingPalindrome();
+});
+
+btn3.addEventListener('click', (e) => {
+    e.preventDefault();
+    finalTotal();
+});
+
 function reversingString() {
     let inputString = document.getElementById("enteredString").value;
     let splitString = inputString.split('');
